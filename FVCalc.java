@@ -7,7 +7,7 @@ public class FVCalc {
 		//Double InterestRate = Double.parseDouble(args[1])
 		int n = Integer.parseInt(args[2]);  //number of years
 		Double power = Math.pow(1+Rate,n);
-		Double Futureval = (int)CurrentVal*power;
-		System.out.println("After "+n +" years, $"+CurrentVal + " saved at "+InterestRate +"% will yield $" +Math.round(Futureval));
+		Double Futureval = (int)CurrentVal*power; 
+		System.out.println("After "+n +" years, $"+CurrentVal + " saved at "+Rate*100 +"% will yield $" +Math.round(Futureval));
 	}
 }
